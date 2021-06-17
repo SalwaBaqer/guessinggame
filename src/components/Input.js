@@ -27,25 +27,6 @@ const Input = (props) => {
     counter += 0;
     props.setnumberOfAttempt(props.numberOfAttempt - counter);
 
-    // // if it was the last attempt and correct guess
-    // if (
-    //   props.numberOfAttempt === 0 &&
-    //   parseInt(textInput) === props.randomNumber
-    // ) {
-    //   return alert(
-    //     `Congratulation you win ,Kindly reload the page for a second round! `
-    //   );
-    // }
-    // exceed the number of attempts and incorrect Guess
-    // else if (
-    //   props.numberOfAttempt === 0 &&
-    //   parseInt(textInput) !== props.randomNumber
-    // ) {
-    //   return alert(
-    //     `Oppss Game Over ,Kindly reload the page for a second round! `
-    //   );
-    // }
-
     // Still have a chance
     if (props.numberOfAttempt >= 0) {
       // Correct Guess

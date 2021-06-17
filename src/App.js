@@ -21,7 +21,7 @@ function App() {
     mainColor: "RoyalBlue", // main font color
     backgroundColor: "AliceBlue", // main background color
     hintColor: "MidnightBlue",
-    pink: "DarkSlateBlue",
+    blue: "DarkSlateBlue",
   };
 
   const [randomNumber, setRandomNumber] = useState(
@@ -34,13 +34,11 @@ function App() {
   const [oddOrEven, setOddOrEven] = useState(); //Hint: the random is odd or even
   const [winMsg, setWinMsg] = useState(); //Hint: the random is odd or even
 
-  const setView = (event) => {
-    return (
-      <>
-        {setnumberOfAttempt(5)}
-        {setRandomNumber(Math.floor(Math.random() * 101))}
-      </>
-    );
+  const setView = () => {
+    setHintMsg("");
+    setOddOrEven("");
+    setnumberOfAttempt(5);
+    setRandomNumber(Math.floor(Math.random() * 101));
   };
 
   return (

@@ -86,5 +86,5 @@ export const HintMessage = styled.h4`
   width: 10%;
   margin-left: auto;
   margin-right: auto;
-  color: ${(props) => props.theme.pink};
+  color: ${(props) => props.theme.blue};
 `;
